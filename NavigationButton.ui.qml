@@ -71,7 +71,7 @@ Row {
         text: qsTr("Brew Me a CUP")
         font.family: Constants.fontFamily
         wrapMode: Text.WrapAnywhere
-        font.pixelSize: 64
+        font.pixelSize: 48
         font.capitalization: Font.AllUppercase
     }
 

@@ -59,9 +59,9 @@ QtObject {
     }
     readonly property alias fontFamily: fontLoader.name
 
-    readonly property int width: 1024
-    readonly property int height: 768
-    readonly property int leftSideBarWidth: 366
+    readonly property int width: 800
+    readonly property int height: 480
+    readonly property int leftSideBarWidth: 250
 
     readonly property color backgroundColor: "#443224"
     readonly property int defaultMargin: 8

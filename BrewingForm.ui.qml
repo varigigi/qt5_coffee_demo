@@ -72,7 +72,7 @@ Item {
             id: cup
             x: 256
             y: 96
-            anchors.horizontalCenterOffset: 150
+            anchors.horizontalCenterOffset: 0
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             questionVisible: false
@@ -93,7 +93,7 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
         font.family: Constants.fontFamily
         wrapMode: Text.WrapAnywhere
-        font.pixelSize: 64
+        font.pixelSize: 48
         font.capitalization: Font.AllUppercase
     }
     states: [

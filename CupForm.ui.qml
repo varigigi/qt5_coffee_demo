@@ -56,8 +56,8 @@ import Coffee 1.0
 Item {
     id: root
 
-    width: 768
-    height: 768
+    width: 480
+    height: 480
     property alias questionVisible: question.visible
     property bool showLabels: true
     property alias coffeeLabel: cappuccinoLabel.text
@@ -73,20 +73,22 @@ Item {
 
         Image {
             id: background
-            x: 12
-            y: 170
+            x: 0
+            y: 84
+            height: 320
             source: "images/cup structure/cup elements/coffee_cup_back.png"
         }
 
         Item {
             id: foam
-            x: 12
+            x: 0
             width: 457
             anchors.topMargin: milk.anchors.topMargin - 40
             anchors.bottom: background.bottom
             anchors.top: background.top
             clip: true
             Image {
+                height: 320
                 anchors.bottom: parent.bottom
                 source: "images/cup structure/liquids/liquid_foam.png"
             }
@@ -94,13 +96,14 @@ Item {
 
         Item {
             id: milk
-            x: 12
+            x: 0
             width: 457
-            anchors.topMargin: 400 - coffee.height - root.milkAmount * 15 + 20
+            anchors.topMargin: 300 - coffee.height - root.milkAmount * 8 + 20
             anchors.bottom: background.bottom
             anchors.top: background.top
             clip: true
             Image {
+                height: 320
                 source: "images/cup structure/liquids/liquid_milk.png"
                 anchors.bottom: parent.bottom
             }
@@ -108,7 +111,7 @@ Item {
 
         Item {
             id: coffee
-            x: 12
+            x: 0
             width: 457
             height: root.coffeeAmount * 40
             anchors.bottomMargin: 0
@@ -116,6 +119,7 @@ Item {
             clip: true
 
             Image {
+                height: 320
                 anchors.bottom: parent.bottom
                 source: "images/cup structure/liquids/liquid_coffee.png"
             }
@@ -123,14 +127,15 @@ Item {
 
         Image {
             id: cupFront
-            x: 11
-            y: 170
+            x: 0
+            y: 84
+            height: 320
             source: "images/cup structure/cup elements/coffee_cup_front.png"
         }
 
         Text {
-            x: 499
-            y: 370
+            x: 410
+            y: 238
             color: "#ffffff"
             text: qsTr("Hot Milk")
             font.capitalization: Font.AllUppercase
@@ -141,8 +146,8 @@ Item {
         }
 
         Text {
-            x: 486
-            y: 468
+            x: 400
+            y: 308
             color: "#ffffff"
             text: qsTr("Espresso Coffee")
             font.capitalization: Font.AllUppercase
@@ -153,15 +158,16 @@ Item {
         }
 
         Image {
-            x: 414
-            y: 274
+            x: 394
+            y: 180
+            width: 20
             visible: root.showLabels
             source: "images/ui controls/line.png"
         }
 
         Text {
-            x: 512
-            y: 259
+            x: 420
+            y: 168
             color: "#ffffff"
             text: qsTr("Milk Foam")
             font.family: Constants.fontFamily
@@ -172,15 +178,17 @@ Item {
         }
 
         Image {
-            x: 404
-            y: 382
+            x: 384
+            y: 250
+            width: 20
             source: "images/ui controls/line.png"
             visible: root.showLabels
         }
 
         Image {
-            x: 388
-            y: 482
+            x: 374
+            y: 320
+            width: 20
             source: "images/ui controls/line.png"
             visible: root.showLabels
         }
@@ -191,19 +199,19 @@ Item {
             text: qsTr("CAPPUCCINO")
             visible: !question.visible
             anchors.top: parent.top
-            anchors.topMargin: 32
+            anchors.topMargin: 0
             anchors.left: parent.left
             anchors.leftMargin: Constants.defaultMargin
             font.family: Constants.fontFamily
             wrapMode: Text.WrapAnywhere
-            font.pixelSize: 64
+            font.pixelSize: 48
             font.capitalization: Font.AllUppercase
         }
 
         Item {
             id: sugarItem
             x: 181
-            y: 419
+            y: 265
             width: 119
             height: 111
             rotation: -45
@@ -239,9 +247,10 @@ Item {
     }
     Image {
         id: question
-        y: 170
+        y: 84
         anchors.left: parent.left
-        anchors.leftMargin: 11
+        anchors.leftMargin: 0
+        height: 320
         source: "images/cup structure/coffee_cup_large.png"
     }
 }

@@ -69,7 +69,8 @@ Item {
         Image {
             id: image
             x: 284
-            y: 174
+            y: 60
+            height: 320
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             source: "images/cup structure/coffee_cup_outline.png"
@@ -79,13 +80,13 @@ Item {
     Text {
         id: brewLabel
         x: 84
-        y: 26
+        y: 0
         color: "#ffffff"
         text: qsTr("Please insert cup into tray")
         anchors.horizontalCenter: parent.horizontalCenter
         font.family: Constants.fontFamily
         wrapMode: Text.WrapAnywhere
-        font.pixelSize: 64
+        font.pixelSize: 48
         font.capitalization: Font.AllUppercase
     }
 

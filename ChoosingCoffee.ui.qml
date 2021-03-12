@@ -85,10 +85,10 @@ Item {
     Rectangle {
         id: rightSideBar
 
-        x: 658
+        x: 480
         y: 0
         width: Constants.leftSideBarWidth
-        height: 768
+        height: 480
         color: "#eec1a2"
         visible: false
         anchors.right: parent.right
@@ -101,7 +101,7 @@ Item {
 
             Slider {
                 id: milkSlider
-                width: 256
+                width: 240
                 height: 48
 
                 to: 10
@@ -116,7 +116,7 @@ Item {
             Slider {
                 id: sugarSlider
 
-                width: 256
+                width: 240
                 height: 48
                 to: 10
                 stepSize: 1

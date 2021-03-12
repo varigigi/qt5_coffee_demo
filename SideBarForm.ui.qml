@@ -55,8 +55,8 @@ Flickable {
     id: flickable
     x: 0
     y: 0
-    width: 354
-    height: 768
+    width: 250
+    height: 480
 
     property alias macchiatoButton: macchiatoButton
     property alias latteButton: latteButton
@@ -65,19 +65,19 @@ Flickable {
 
     contentWidth: 250
     boundsBehavior: Flickable.StopAtBounds
-    contentHeight: 1506
+    contentHeight: 1250
     clip: true
 
     Rectangle {
         id: background
         x: 0
-        width: 354
-        height: 1506
+        width: 250
+        height: 1250
         color: "#eec1a2"
     }
 
     ColumnLayout {
-        x: 52
+        x: 0
         y: 0
         spacing: 64
 
